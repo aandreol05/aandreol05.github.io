@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>TD n°1 Programmation Web – Application Météo</title>
-    <script src="td1.js" defer></script> <!-- Inclusion du fichier JavaScript -->
+    <title>TD n°1 Programmation Web – Météo API</title>
+    <script src="td1.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>TD n°1 Programmation web – Application météo</h1>
+        <h1>TD n°1 Programmation web – Application météo (API)</h1>
     </header>
 
     <!-- Sélection de la ville -->
@@ -21,29 +21,19 @@
         </select>
     </div>
 
-    <!-- Conteneur des villes -->
+    <!-- Conteneur des villes (sera mis à jour dynamiquement) -->
     <div class="city-container">
-        <div id="Niort" class="ville">
-            <h2>Niort</h2>
-            <p>12°, pluvieux</p>
-            <img src="pluvieux.png" alt="Pluvieux">
-        </div>
-
-        <div id="Rio" class="ville" style="display: none;">
-            <h2>Rio de Janeiro</h2>
-            <p>29°, orages</p>
-            <img src="orageux.png" alt="Orageux">
-        </div>
-
-        <div id="Reykjavik" class="ville" style="display: none;">
-            <h2>Reykjavik</h2>
-            <p>-10°, ensoleillé</p>
-            <img src="ensoleille.png" alt="Ensoleillé">
+        <div id="meteo" class="ville">
+            <h2 id="nomVille"></h2>
+            <p id="country"></p>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <img id="iconeMeteo" src="" alt="Icône météo">
         </div>
     </div>
 
     <footer>
-        <p>François Gautier</p>
+        <p>Andrea Andreoli</p>
         Icônes météo par <a href="https://thenounproject.com">The Noun Project</a>
     </footer>
 </body>
