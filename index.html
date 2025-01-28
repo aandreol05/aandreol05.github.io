@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>TD n°1 Programmation Web Application Météo</title>
+    <title>TD n°1 Programmation Web – Application Météo</title>
+    <script src="td1.js" defer></script> <!-- Inclusion du fichier JavaScript -->
 </head>
 <body>
     <header>
-        <h1>TD n°1 Programmation web Application météo</h1>
+        <h1>TD n°1 Programmation web – Application météo</h1>
     </header>
 
-    <div class="city-container">
+    <!-- Sélection de la ville -->
+    <div class="select-container">
+        <label for="selectVille">Choisir une ville : </label>
+        <select id="selectVille">
+            <option value="Niort">Niort</option>
+            <option value="Rio">Rio de Janeiro</option>
+            <option value="Reykjavik">Reykjavik</option>
+        </select>
+    </div>
 
-        <div class="city">
+    <!-- Conteneur des villes -->
+    <div class="city-container">
+        <div id="Niort" class="ville">
             <h2>Niort</h2>
             <p>12°, pluvieux</p>
-            <img src="pluvieux.png" width="5%">
+            <img src="pluvieux.png" alt="Pluvieux">
         </div>
 
-        <div class="city">
+        <div id="Rio" class="ville" style="display: none;">
             <h2>Rio de Janeiro</h2>
             <p>29°, orages</p>
-            <img src="orageux.png" width="5%">
+            <img src="orageux.png" alt="Orageux">
         </div>
 
-        <div class="city">
+        <div id="Reykjavik" class="ville" style="display: none;">
             <h2>Reykjavik</h2>
             <p>-10°, ensoleillé</p>
-            <img src="ensoleille.png" width="5%">
+            <img src="ensoleille.png" alt="Ensoleillé">
         </div>
-
     </div>
 
     <footer>
-        <p>Andrea Andreoli</p>
+        <p>François Gautier</p>
         Icônes météo par <a href="https://thenounproject.com">The Noun Project</a>
     </footer>
 </body>
